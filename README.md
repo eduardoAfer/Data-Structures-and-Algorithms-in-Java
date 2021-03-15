@@ -54,4 +54,4 @@ Programa da Univesidade do Porto
 
 ![alt text][logo]
 
-[logo]: https://www.up.pt/it/static/76781e2f.png
+[logo]:https://www.up.pt/it/static/76781e2f.png
