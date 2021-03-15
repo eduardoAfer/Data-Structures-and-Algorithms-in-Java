@@ -1,9 +1,5 @@
 # Data Structures and Algorithms in Java
 
-Programa da Uporto
-![alt text][logo]
-
-[logo]: https://sigarra.up.pt/reitoria/pt/imagens/M2020-Logo
  
 ###Objetivos
 
@@ -53,3 +49,9 @@ Os principais objectivos de aprendizagem são:
 ###Bibliografia
 
 Goodrich Michael T.; Data structures and algorithms in Java. ISBN: 0-471-73884-0 
+
+Programa da Univesidade do Porto
+
+![alt text][logo]
+
+[logo]: https://sigarra.up.pt/reitoria/pt/imagens/M2020-Logo
