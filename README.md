@@ -1,7 +1,7 @@
 # Data Structures and Algorithms in Java
 
  
-###Objetivos
+### Objetivos
 
 Pretende-se que o estudante reforce competências de programação, fique a conhecer algumas das principais estruturas de dados e algoritmos associados, e ganhe competências básicas na concepção e análise de algoritmos.
 Resultados de aprendizagem e competências
@@ -15,7 +15,7 @@ Os principais objectivos de aprendizagem são:
 - Experiência prática de aplicação a problemas concretos.
 
 
-###Programa
+### Programa
 
 - Conceitos Fundamentais de Java:
   . Classes, objectos, atributos e métodos
@@ -46,7 +46,7 @@ Os principais objectivos de aprendizagem são:
   . Contentores associativos: conjuntos e dicionários
   . Filas de prioridade
   
-###Bibliografia
+### Bibliografia
 
 Goodrich Michael T.; Data structures and algorithms in Java. ISBN: 0-471-73884-0 
 
