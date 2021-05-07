@@ -12,13 +12,15 @@ public class ED196 {
             data[1] = q.dequeue();
             if (data[1].equals("A"))
                 a.enqueue(data[0]);
-            else if (data[0].equals("B"))
+            else if (data[1].equals("B"))
                 b.enqueue(data[0]);
             else {
                 if (a.size() < b.size())
                     a.enqueue(data[0]);
-                else
+                else if (a.size() > b.size())
                     b.enqueue(data[0]);
+                else
+                    continue;
             }
         }
 

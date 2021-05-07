@@ -10,7 +10,7 @@ public class TestMyQueue {
         MyQueue<String> b = new LinkedListQueue<String>();
 
         // Exemplo de insercao de elementos na fila
-        for (int i = 1; i < n; i++) {
+        for (int i = 1; i < n * 2 + 1; i++) {
             String dado = stdin.next();
             q.enqueue(dado);
         }
