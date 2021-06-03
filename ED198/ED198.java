@@ -2,50 +2,45 @@ import java.util.*;
 
 class ED198 {
 
+    public static int findMaximumSum(int[] A, int left, int right) {
+        if (right == left) {
+            return A[left];
+        }
+        int mid = (left + right) / 2;
+
+        int leftMax = Integer.MIN_VALUE;
+        int sum = 0;
+        for (int i = mid; i >= left; i--) {
+            sum += A[i];
+            if (sum > leftMax) {
+                leftMax = sum;
+            }
+        }
+
+        int rightMax = Integer.MIN_VALUE;
+        sum = 0;
+        for (int i = mid + 1; i <= right; i++) {
+            sum += A[i];
+            if (sum > rightMax) {
+                rightMax = sum;
+            }
+        }
+
+        int maxLeftRight = Integer.max(findMaximumSum(A, left, mid), findMaximumSum(A, mid + 1, right));
+
+        return Integer.max(maxLeftRight, leftMax + rightMax);
+    }
+
     public static void main(String[] args) {
         Scanner stdin = new Scanner(System.in);
 
         int N = stdin.nextInt();
-        int[] numeros = new int[N];
+        int[] arr = new int[N];
 
-        for (int i = 0; i < N; i++)
-            numeros[i] = stdin.nextInt();
-
-        System.out.println(maxSubArraySum(numeros, 0, N - 1));
-    }
-
-    // Find the maximum possible sum in arr[]
-    // such that arr[m] is part of it
-    static int maxCrossingSum(int arr[], int l, int m, int h) {
-        // Include elements on left of mid.
-        int sum = 0;
-        int left_sum = Integer.MIN_VALUE;
-        for (int i = m; i >= l; i--) {
-            sum = sum + arr[i];
-            if (sum > left_sum)
-                left_sum = sum;
+        for (int i = 0; i < N; i++) {
+            arr[i] = stdin.nextInt();
         }
 
-        // Include elements on right of mid
-        sum = 0;
-        int right_sum = Integer.MIN_VALUE;
-        for (int i = m + 1; i <= h; i++) {
-            sum = sum + arr[i];
-            if (sum > right_sum)
-                right_sum = sum;
-        }
-
-        return Math.max(left_sum + right_sum, Math.max(left_sum, right_sum));
+        System.out.println(findMaximumSum(arr, 0, arr.length - 1));
     }
-
-    public static int maxSubArraySum(int arr[], int l, int h) {
-        if (l == h)
-            return arr[l];
-
-        int m = (l + h) / 2;
-
-        return Math.max(Math.max(maxSubArraySum(arr, l, m), maxSubArraySum(arr, m + 1, h)),
-                maxCrossingSum(arr, l, m, h));
-    }
-
 }
