@@ -258,4 +258,24 @@ public class BSTree<T extends Comparable<? super T>> {
 
       return acc + countBetween(n.getLeft(), a, b) + countBetween(n.getRight(), a, b);
    }
+
+   public boolean insert(BSTNode<T> node, int v) {
+      BSTNode<T> newNode = new BSTNode<T>(v, null, null);
+
+      if (isEmpty) {
+         node.setVlaue(v);
+         return true;
+      }
+      if (node == null) {
+         node = newNode;
+         return true;
+      }
+      if (v.compareTo(node.getValue()) < 0) {
+         return insert(node.getLeft(), v);
+      }
+      if (v.compareTo(node.getValue()) > 0)
+         return insert(node.getValue(), v);
+
+      return false;
+   }
 }

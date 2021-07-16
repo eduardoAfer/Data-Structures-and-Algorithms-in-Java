@@ -238,4 +238,24 @@ public class BSTree<T extends Comparable<? super T>> {
          return nodo.getValue();
       return maxValue(nodo.getRight());
    }
+
+}
+
+public boolean insert2(BSTNode<T> node, int v){
+   BSTNode<T> newNode = new BSTNode<T>(v, null, null);
+
+   if(isEmpty){
+       node.setVlaue(v);
+       return true;
+   }
+   if(node == null){
+       node = newNode;
+       return true;
+   }
+   if(v.compareTo(node.getValue()) < 0){
+       return insert2(node.getLeft(), v);
+   }
+   if(v.compareTo(node.getValue()) > 0) return insert2(node.getValue(), v);
+
+   return false;
 }

@@ -39,4 +39,6 @@ class TestBSTree {
         System.out.println("qnt entre [14, 20] = " + t.countBetween(14, 20));
 
     }
+
+    
 }

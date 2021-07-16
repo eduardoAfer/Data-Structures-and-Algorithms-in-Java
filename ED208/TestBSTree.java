@@ -34,5 +34,7 @@ class TestBSTree {
         t.insert(42);
         System.out.println("valor max = " + t.maxValue());
 
+        System.out.println(t.insert2(100));
+
     }
 }
