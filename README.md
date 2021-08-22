@@ -4,38 +4,21 @@
 
 ### Exercícios estruturados em:
 
-- Conceitos Fundamentais de Java:
-  . Classes, objectos, atributos e métodos
-  . Tipos primitivos, Strings, wrappers, arrays e tipos enumerados
-  . Expressões, operadores e instruções de controle de fluxo
-  . Input/Output e a classe Scanner
-  . Pacotes e biblioteca padrão do Java
-  . Princípios de desenvolvimento de software, estilo e documentação
-- Programação Orientada a Objectos:
-  . Objectivos, princípio, padrões e mecanismo de herança
-  . Interfaces e Tipos Abstractos de Dados (TADs)
-  . Uso de genéricos e de iteradores
-- Conceitos de Análise Assintótica:
-  . Noções de análise assintótica
-  . Classes de complexidades típicas e sua comparação
-  . Exemplos de análise de algoritmos
-- Técnicas de Desenho de Algoritmos:
-  . Programaçao estruturada
-  . Recursividade
-  . Pesquisa exaustiva e backtracking
-  . Dividir para conquistar
-- Estruturas de Dados Fundamentais:
-  . Arrays e matrizes
-  . Listas ligadas simples, circulares e duplamente ligadas
-  . Árvores binárias, árvores de pesquisa e heaps
-- Tipos Abstratos de Dados e suas possíveis Implementações
-  . Sequências, pilhas, filas e deques:
-  . Contentores associativos: conjuntos e dicionários
-  . Filas de prioridade
+- Fundamentals of Java:
+  Classes, objects, attributes and methods. Primitive types, Strings, wrappers, arrays and enumerated types. Flow control expressions, operators and instructions. Input/output and the Scanner class. Java standard packages and library. Software development principles, style and documents
+  <br />- Problems: ([[ED183]](https://github.com/eduardoAfer/Data-Structures-and-Algorithms-in-Java/blob/main/estatistica/Estatisticas.java), [[ED120] ](https://github.com/eduardoAfer/Data-Structures-and-Algorithms-in-Java/blob/main/losango/Losango.java), [[ED244] ](https://github.com/eduardoAfer/Data-Structures-and-Algorithms-in-Java/blob/main/primos/Primos.java))
   
-### Bibliografia
+  
+  
+ - Object Oriented Programming:. Objectives, principles, standards and inheritance mechanism. Interfaces and Abstract Data Types (TADs). Use of generics and iterators
+ <br />- Problems: ([[ED187]](https://github.com/eduardoAfer/Data-Structures-and-Algorithms-in-Java/blob/main/matrix%5BED187%5D/TestMatrix.java), [](), [](), [](), [](), [](), [](), [](), )
 
-Goodrich Michael T.; Data structures and algorithms in Java. ISBN: 0-471-73884-0 
 
-Programa da Univesidade do Porto
+- Asymptotic Analysis Concepts:. Notions of asymptotic analysis. Typical Complexity Classes and Their Comparison. Algorithm Analysis Examples
+- Algorithm Design Techniques:. Structured programming. Recursiveness. Exhaustive search and backtracking. divide and conquer
+- Fundamental Data Structures:. Matrices and matrices. Single linked, circular and double linked lists. Binary trees, search trees and heaps
+- Abstract Data Types and their Possible Implementations. Sequences, stacks, rows and decks:. Associative containers: sets and knowledge. Priority Queues
+
+
+  
 
